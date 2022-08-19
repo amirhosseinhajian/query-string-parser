@@ -6,7 +6,9 @@ function convertURLParametersToObject(str){
     const result = {};
     parameter.forEach(element => {
         if(element){
-            Object.assign(result, Object.fromEntries([element.split('=')]));
+            let d = element.split('=');
+            const obj = {[d.shift()]: d.join('')};
+            Object.assign(result, obj);
         }
     });
     return result;

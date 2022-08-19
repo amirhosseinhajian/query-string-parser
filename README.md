@@ -1,4 +1,4 @@
-# example of using this module
+## example of using this module
 ```javascript
 const convertURLParametersToObject = require('convert-url-parameters-to-object');
 
